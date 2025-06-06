@@ -11,10 +11,8 @@ end
 
 # —— 以下为 Rails 5/Redmine 4.2 推荐的 to_prepare 写法 —— #
 Rails.application.config.to_prepare do
-  require_dependency 'redmine_landing_page/hooks'
+  require 'redmine_landing_page/hooks/view_projects_form_hook'
+  require 'redmine_landing_page/hooks/view_my_account_hook'
+  require 'redmine_landing_page/hooks/view_users_form_hook'
 end
 
-# 如果你有其他某些 hook 需要立即加载，也可以保留这些 require
-require 'redmine_landing_page/hooks/view_projects_form_hook'
-require 'redmine_landing_page/hooks/view_my_account_hook'
-require 'redmine_landing_page/hooks/view_users_form_hook'
