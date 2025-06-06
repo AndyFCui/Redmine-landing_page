@@ -11,3 +11,14 @@ For redmine 1.4.x see redmine-1.x branch.
 For redmine 2.6.x see redmine-2.x branch.
 
 Install to redmine/plugins directory and run "bundle exec rake redmine:plugins:migrate".
+
+== Version History
+
+=== Version 0.3.2 (Latest)
+* Updated plugin initialization for better Rails 5/Redmine 4.2+ compatibility
+* Replaced ActionDispatch::Callbacks.to_prepare with Rails.application.config.to_prepare
+* Improved code structure and hook loading mechanism
+* Enhanced compatibility with newer Redmine versions
+
+=== Previous Versions
+* Version 0.1.1 - Initial release with basic landing page functionality
