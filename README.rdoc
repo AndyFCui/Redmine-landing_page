@@ -1,0 +1,13 @@
+= redmine_landing_page
+
+Landing Page plugin for redmine. Tested with redmine 3.0.x and MRI ruby:
+* 1.9.3-p551
+* 2.0.0-p648
+* 2.1.10
+* 2.2.5
+
+For redmine 1.4.x see redmine-1.x branch.
+
+For redmine 2.6.x see redmine-2.x branch.
+
+Install to redmine/plugins directory and run "bundle exec rake redmine:plugins:migrate".
